@@ -2,7 +2,7 @@
   "name": "twitstream",
   "author": "Maciej Małecki <me@mmalecki.com>",
   "description": "Twitter streaming module which *I* like",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "oauth-sign": "0.3.x",
     "node-uuid": "1.4.x"
