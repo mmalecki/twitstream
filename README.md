@@ -4,7 +4,7 @@ Twitter streaming module which *I* like.
 ## Usage
 
 ### Creating a client
-Create a client tracking `nodejs` search term.
+Create a client tracking `hockey` search term anywhere on twitter.
 ```js
 var twitstream = require('twitstream');
 var stream = twitstream({
@@ -15,6 +15,21 @@ var stream = twitstream({
     consumerSecret: '...'
   },
   track: ['hockey']
+});
+```
+
+Alternatively you can create a client to track a specific user's twitter stream.
+```js
+var twitstream = require('twitstream');
+var stream = twitstream.Userstream({
+  auth: {
+    token: '...',
+    tokenSecret: '...',
+    consumerKey: '...',
+    consumerSecret: '...'
+  },
+  with: 'followings',
+  replies: 'all'
 });
 ```
 
